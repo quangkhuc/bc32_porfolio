@@ -1,0 +1,269 @@
+header .navbar-brand i {
+    color: green !important;
+    font-size: 2.5rem;
+}
+
+header {
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%)
+}
+
+header .navbar-brand span {
+    font-size: 2rem;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li.my-active a {
+    color: green !important;
+
+}
+
+header ul li:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: green;
+    transition: 1s;
+}
+
+
+header ul li.my-active:after {
+    width: 100% !important;
+}
+
+header ul li:hover::after {
+    width: 100%;
+}
+
+header ul li a:hover {
+    color: green !important;
+
+}
+
+.carousel-item:nth-child(1) {
+
+    background-image: url(./lib/image/image-20220623T123125Z-001/image/finland.jpg);
+}
+
+.carousel-item:nth-child(2) {
+
+    background-image: url(./lib/image/image-20220623T123125Z-001/image/mountains.jpg);
+}
+
+.carousel-item:nth-child(3) {
+
+    background-image: url(./lib/image/image-20220623T123125Z-001/image/mountains-1.jpg);
+}
+
+.carousel-item {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.img__thumb {
+    width: 150px;
+    margin: auto;
+}
+
+.img__thumb img {
+    border-radius: 50%;
+}
+
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-indicators li {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    transition: all 1s;
+
+}
+
+.carousel-indicators li:active {
+    background-color: green;
+    opacity: 0.5;
+}
+
+#project .title h1 {
+    text-align: center;
+}
+
+#project .title p {
+    text-align: center;
+    padding: 0 15%;
+}
+
+#project .project__content .tab-content .card {
+    margin: 20px 0;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 1px black;
+    transition: 0.5s;
+
+}
+
+#project .project__content .tab-content .card h4 {
+    font-size: 18px;
+
+}
+
+/* #project .project__content .tab-content .card img{
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+
+
+} */
+#project .project__content .tab-content .card:hover {
+    border: 1px solid green;
+}
+
+/* #project .project__content .tab-content .card h4:hover {
+    color: green
+} */
+.card:hover .info h4 {
+    color: green;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: green;
+}
+
+
+
+#services {
+    background-image: url("./lib/image/image-20220623T123125Z-001/image/3.jpg");
+    background-size: cover;
+    padding: 5rem 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#services .card {
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    background-color: #0000005e;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+}
+
+#services .card i {
+    color: green;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#services .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000004d;
+}
+
+#services .title {
+    position: relative;
+}
+
+#education {
+    position: relative;
+    color: #585858;
+    padding: 70px 0;
+}
+
+.bg-image {
+    background-image: url(./lib/image/image-20220623T123125Z-001/image/memphis_3.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    opacity: .5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+#education .card .card-body {
+    padding: 10%;
+}
+
+#education .card .card-body h4 {
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+
+
+#education .card {
+    border: 1px black solid;
+    background-color: #00000000;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 30px 0px rgb(0 0 0 / 30%);
+    border: none;
+}
+
+#education .col-md-7 {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+#education .col-md-7 img {
+    width: 100%;
+    height: 100%;
+}
+
+#contact .media {
+    background-color: black;
+    padding: 30px 30px;
+    color: #aaaaaa;
+    justify-content: center;
+
+
+}
+
+#contact .media i {
+    font-size: 20px;
+    border: #454545;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+.copyright {
+    border-top-width: 1px;
+    border-top-color: white;
+    background-color: black;
+    border-top-style: solid;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    width: 75%;
+
+}
+.copyright p{
+    color:white;
+    justify-content: center;
+    text-align: center;
+
+}
